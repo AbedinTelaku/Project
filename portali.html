@@ -12,6 +12,8 @@ margin: 0;
 .container{
     width: 1200px;
     margin: 0 auto;
+    display: flex;
+        justify-content: space-between;
 
 }
 .logo img{
@@ -24,6 +26,28 @@ margin: 0;
 .menu ul li{
     display: inline;
 }
+ #kategorizimi ul{
+        list-style-type: none;
+    }
+    #kategorizimi ul li{
+        display: inline;
+    }
+    form {
+    margin: auto;
+    margin-top: 15px;
+   }
+
+  input {
+  padding: 4px 10px;
+  border: 0;
+  }
+
+
+
+.submit {
+  background-color: blue;
+  color: white;
+}		 
 #header{
     border: 1px solid black;
     height: 165px;
@@ -38,15 +62,51 @@ margin: 0;
     float: left;
     border: 1px solid black;
     width: 70%;
+	height: 100% ;
 }
-.new-article{
-   height: 33%;
-   border: 1px solid black; 
-}
-.right-sidebar{
-    float: right;
-    width: 29%;
-}
+		 .cont{
+        width: 1200px;
+        margin: 0 auto;
+    }
+ .content-main{
+        float: left;
+        border: 1px solid black;
+        width: 70%;
+        height: 100%;
+    }
+    .ads{
+       height: 115px;
+       border: 1px solid black; 
+    }
+    #ads-image{
+        height: 115px; 
+        width: 840px;
+    }
+    .lajmiKryesor{
+        border: 1px solid black;
+        height: 220px;
+    }
+    .lajmet{
+        display: flex;
+        justify-content: space-around;
+        height: 120px;
+    }
+    #lajmi1{
+        border: 1px solid black;
+        width: 20%;
+    }
+    #lajmi2{
+        border: 1px solid black;
+        width: 20%;
+    }
+    #lajmi3{
+        border: 1px solid black;
+        width: 20%;
+    }
+    .right-sidebar{
+        float: right;
+        width: 29%;
+    }
 #footer{
     border: 1px solid black;
     height: 200px;
@@ -58,8 +118,17 @@ margin: 0;
         <div id = "header">
             <div class="container">
             <div class="logo">
-                 <img src="images/png-online-newspaper-journalism-others-blue-text-trademark-logo-clipart.png"/>
+                 <img src="C:\Users\TECHCOM\Documents\java.jpg""/>
         </div>
+	 </div>
+           <div id="kategorizimi">
+                <ul>
+                    <li>Lajme||</li>
+                    <li>Ekonomi||</li>
+                    <li>Sport||</li>
+                    <li>Showbiz||</li>
+                </ul>
+           </div>
         <div class="menu">
             <ul>
                 <li>Home</li>
@@ -69,17 +138,34 @@ margin: 0;
         </div> 
         </div>
         <div class="content">
-            <div class="container">
-                <div class="new-article">
-                            <h2>LAJMI FUNDIT</h2>
-                            <p>......</p>
-            
-        </div>
-                </div>
+            <div class="cont">
+                <div class="content-main">
+                        <div class="ads">
+                            <img id="ads-image" src="C:\Users\TECHCOM\Downloads\ubt.jpg" alt="ubt" />
+                        </div>
+                        <div class="lajmiKryesor">
+                            <h1>Lajmi kryesor</h1>
+                            
+                        </div>
+
+                       <div class="lajmet">
+                           <div id="lajmi1">
+                               <img src="C:\Users\TECHCOM\Downloads\news.jpg" alt="news" style="height: 80px ; width: 168px;" />
+                               <p>Lajmi 1</p>
+                           </div>
+                           <div id="lajmi2">
+                            <img src="C:\Users\TECHCOM\Downloads\news.jpg" alt="news" style="height: 80px ; width: 168px;" />
+                            <p>Lajmi 2</p>
+                           </div>
+                           <div id="lajmi3">
+                            <img src="C:\Users\TECHCOM\Downloads\news.jpg" alt="news" style="height: 80px ; width: 168px;" />
+                            <p>Lajmi 3</p>
+                           </div>
+                       </div>
             <div class="right-sidebar">
                 </div>
-            </div>
-       
+            <//div>
+				      </div>
         <div id = "footer">
             <div class="container">
                 
